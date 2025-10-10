@@ -33,8 +33,8 @@ public class Main {
 
         System.out.println("Mata kuliah\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus");
         System.out.println("-------------------------------------------------------------------");
-        System.out.println("Algoritma Pemrograman" + "\t" + uts_1 + "\t" + uas_1 + "\t\t" + tugas_1 + "\t" + nilaiAkhir + "\t" + huruf + "\t" + Status);
-        System.out.println("Struktur Data" + "\t" + uts_1 + "\t" + uas_1 + "\t\t" + tugas_1 + "\t" + nilaiAkhir + "\t" + huruf + "\t" + Status);
+        System.out.println("Algoritma Pemrograman" + "\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t\t" + nilaiAkhir + "\t\t" + huruf + "\t" + Status);
+        System.out.println("Struktur Data" + "\t\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t\t" + nilaiAkhir + "\t\t" + huruf + "\t" + Status);
         
     }
     
