@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int tugas_1, uts_1, uas_1;
+        int tugas_2, uts_2, uas_2;
         String nama, nim;
         String hahahaha;
 
