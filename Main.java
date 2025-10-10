@@ -4,6 +4,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         int tugas_1, uts_1, uas_1;
         String nama, nim;
+        String hahahaha;
 
         System.out.println("==== INPUT DATA MAHASISWA ====");
         System.out.print("Nama : ");
