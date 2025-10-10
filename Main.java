@@ -35,7 +35,6 @@ public class Main {
         System.out.println("-------------------------------------------------------------------");
         System.out.println("Algoritma Pemrograman" + "\t" + uts_1 + "\t" + uas_1 + "\t\t" + tugas_1 + "\t" + nilaiAkhir + "\t" + huruf + "\t" + Status);
         System.out.println("Struktur Data");
-        BelajarNihBro();
         
     }
     
