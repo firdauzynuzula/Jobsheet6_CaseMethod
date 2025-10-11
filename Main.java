@@ -44,14 +44,7 @@ public class Main {
         System.out.println("Mata kuliah\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus");
         System.out.println("-------------------------------------------------------------------");
         System.out.println("Algoritma Pemrograman" + "\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t" + nilaiAkhir_1  + "\t\t" + paraf + "\t\t" + statusKelulusan);
-        // System.out.println("Struktur Data" + "\t\t" + uts_2 + "\t" + uas_2 + "\t" + tugas_2 + "\t" + nilaiAkhir_1 + "\t\t"+ paraf + "\t\t" + statusKelulusan);
-        BelajarNihBro(nilaiAkhir_1 , tugas_1 , uas_1 , uts_1);
-    }
-    
-    public static void BelajarNihBro(double nilai , int tugas_1 , int uas_1, int uts_1) {
-        if (nilai >= 80 && nilai <= 100) {
-         System.out.println("Struktur Data" + "\t\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t" + nilai + "\t\t");
-        }
+        System.out.println("Struktur Data" + "\t\t" + uts_2 + "\t" + uas_2 + "\t" + tugas_2 + "\t" + nilaiAkhir_1 + "\t\t"+ paraf + "\t\t" + statusKelulusan);
     }
 
 }
