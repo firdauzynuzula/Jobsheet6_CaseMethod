@@ -5,8 +5,6 @@ public class Main {
         int tugas_1, uts_1, uas_1;
         int tugas_2, uts_2, uas_2;
         String nama, nim;
-        String paraf = "BAIK";
-        String statusKelulusan = "BYUH";
 
         System.out.println("==== INPUT DATA MAHASISWA ====");
         System.out.print("Nama : ");
@@ -33,6 +31,14 @@ public class Main {
         input.close();
 
         double nilaiAkhir_1 = (tugas_1 * 0.3) + (uts_1 * 0.3) + (uas_1 * 0.4);
+        char paraf = ' ';
+        String status = " ";
+
+        if (nilaiAkhir_1 > 80 && nilaiAkhir_1 <= 100) {
+            paraf = 'B';
+            status = "Lulus";
+        }
+        
         
         // Hasil atau output
         System.out.println("\n");
@@ -43,15 +49,15 @@ public class Main {
         
         System.out.println("Mata kuliah\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus");
         System.out.println("-------------------------------------------------------------------");
-        System.out.println("Algoritma Pemrograman" + "\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t" + nilaiAkhir_1  + "\t\t" + paraf + "\t\t" + statusKelulusan);
-        // System.out.println("Struktur Data" + "\t\t" + uts_2 + "\t" + uas_2 + "\t" + tugas_2 + "\t" + nilaiAkhir_1 + "\t\t"+ paraf + "\t\t" + statusKelulusan);
-        BelajarNihBro(nilaiAkhir_1 , tugas_1 , uas_1 , uts_1);
+        System.out.println("Algoritma Pemrograman" + "\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t" + nilaiAkhir_1  + "\t\t" + paraf + "\t\t" + status);
+        System.out.println("Struktur Data" + "\t\t" + uts_2 + "\t" + uas_2 + "\t" + tugas_2 + "\t" + nilaiAkhir_1 + "\t\t"+ paraf + "\t\t" + status);
+        // BelajarNihBro(nilaiAkhir_1 , tugas_1 , uas_1 , uts_1);
     }
     
-    public static void BelajarNihBro(double nilai , int tugas_1 , int uas_1, int uts_1) {
-        if (nilai >= 80 && nilai <= 100) {
-         System.out.println("Struktur Data" + "\t\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t" + nilai + "\t\t");
-        }
-    }
+    // public static void BelajarNihBro(double nilai , int tugas_1 , int uas_1, int uts_1) {
+    //     if (nilai >= 80 && nilai <= 100) {
+    //     System.out.println("Struktur Data" + "\t\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t" + nilai + "\t\t");
+    //     }
+    // }
 
 }
