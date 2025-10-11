@@ -32,6 +32,22 @@ public class Main {
         System.out.print("Nilai Tugas  : ");
         tugas_2 = input.nextInt();
         input.close();
-    }
+
+        double nilaiAkhir_1 = (tugas_1 * 0.3) + (uts_1 * 0.3) + (uas_1 * 0.4);
+        double nilaiAkhir_2 = (tugas_2 * 0.3) + (uts_2 * 0.3) + (uas_2 * 0.4);
+
+        System.out.println("\n");
+        System.out.println("========== HASIL PENILAIAN AKADEMIK ==========");
+        System.out.println("Nama : " + nama);
+        System.out.println("Nim  : " + nim);
+        System.out.println("\n");
+
+        System.out.println("Mata kuliah\t\tUTS\tUAS\tTugas\tNilai Akhir");
+        System.out.println("-----------------------------------------------------");
+        System.out
+                .println("Algoritma Pemrograman" + "\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t" + nilaiAkhir_1);
+        System.out.println("Struktur Data" + "\t\t" + uts_2 + "\t" + uas_2 + "\t" + tugas_2 + "\t" + nilaiAkhir_2);
+        
+    }   
 
 }
