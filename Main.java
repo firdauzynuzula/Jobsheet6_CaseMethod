@@ -33,21 +33,29 @@ public class Main {
         tugas_2 = input.nextInt();
         input.close();
 
-        double nilaiAkhir_1 = (tugas_1 * 0.3) + (uts_1 * 0.3) + (uas_1 * 0.4);
-        double nilaiAkhir_2 = (tugas_2 * 0.3) + (uts_2 * 0.3) + (uas_2 * 0.4);
+        hasilInputan(nama, nim, tugas_1, uts_1, uas_1, tugas_2, uts_2, uas_2);
+    }
+    
+    public static void hasilInputan(String nama, String nim, int tugas_1, int uts_1, int uas_1, int tugas_2, int uts_2, int uas_2) {
+        double nilaiAkhir1 = (0.3 * tugas_1) + (0.35 * uts_1) + (0.35 * uas_1);
+        double nilaiAkhir2 = (0.3 * tugas_2) + (0.35 * uts_2) + (0.35 * uas_2);
 
-        System.out.println("\n");
-        System.out.println("========== HASIL PENILAIAN AKADEMIK ==========");
+        System.out.println("\n==== OUTPUT DATA MAHASISWA ====");
         System.out.println("Nama : " + nama);
         System.out.println("Nim  : " + nim);
-        System.out.println("\n");
+        System.out.printf("Nilai Akhir Mata Kuliah 1 (Algoritma dan Pemrograman): %.2f\n", nilaiAkhir1);
+        System.out.printf("Nilai Akhir Mata Kuliah 2 (Struktur Data): %.2f\n", nilaiAkhir2);
 
-        System.out.println("Mata kuliah\t\tUTS\tUAS\tTugas\tNilai Akhir");
-        System.out.println("-----------------------------------------------------");
-        System.out
-                .println("Algoritma Pemrograman" + "\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t" + nilaiAkhir_1);
-        System.out.println("Struktur Data" + "\t\t" + uts_2 + "\t" + uas_2 + "\t" + tugas_2 + "\t" + nilaiAkhir_2);
-        
-    }   
+
+        System.out.println("\nTerima kasih telah menggunakan program ini!");
+        System.out.println("program ini berakhir disini");
+        penghitunganNilai(tugas_2, uts_2, uas_2);
+
+    }
+
+    public static int penghitunganNilai(int tugas , int uts , int uas_1) {
+        double nilaiAkhir = (0.3 * tugas) + (0.35 * uts) + (0.35 * uas_1);
+        return (int) nilaiAkhir;
+    }
 
 }
