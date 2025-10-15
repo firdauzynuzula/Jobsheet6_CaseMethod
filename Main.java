@@ -46,7 +46,7 @@ public class Main {
                 tugas_2 > 0 && tugas_2 <= 100 && uts_2 > 0 && uts_2 <= 100 && uas_2 <= 0 && uas_2 <= 100 &&
                 tugas_3 > 0 && tugas_3 <= 100 && uts_3 > 0 && uts_3 <= 100 && uas_3 > 0 && uas_3 <= 100) {
             System.out.println("Nilai yang dimasukkan tidak valid. Nilai harus antara 0 hingga 100.");
-            // return;
+            return;
         } else {
 
             // proses perhitungan nilai akhir dan status kelulusan matakuliah 1
