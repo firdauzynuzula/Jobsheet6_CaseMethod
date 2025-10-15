@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int tugas_1, uts_1, uas_1, tugas_2, uts_2, uas_2;
+        int tugas_3, uts_3, uas_3;
         String nama, nim;
         
         //input data mahasiswa
@@ -21,6 +22,7 @@ public class Main {
         System.out.print("Nilai Tugas  : ");
         tugas_1 = input.nextInt();
         
+        System.out.println("\n");
         System.out.println("--- Mata kuliah 2: Struktur Data ---");
         System.out.print("Nilai UTS    : ");
         uts_2 = input.nextInt();
@@ -28,6 +30,17 @@ public class Main {
         uas_2 = input.nextInt();
         System.out.print("Nilai Tugas  : ");
         tugas_2 = input.nextInt();
+
+        System.out.println("\n");
+         System.out.println("--- Mata kuliah 3: Java ---");
+        System.out.print("Nilai UTS    : ");
+        uts_3 = input.nextInt();
+        System.out.print("Nilai UAS    : ");
+        uas_3 = input.nextInt();
+        System.out.print("Nilai Tugas  : ");
+        tugas_3 = input.nextInt();
+
+
         input.close();
         
         // proses perhitungan nilai akhir dan status kelulusan matakuliah 1
@@ -98,6 +111,8 @@ public class Main {
         System.out.println("-------------------------------------------------------------------");
         System.out.println("Algoritma Pemrograman" + "\t" + uts_1 + "\t" + uas_1 + "\t" + tugas_1 + "\t" + nilaiAkhir_1  + "\t\t" + paraf + "\t\t" + statusKelulusan);
         System.out.println("Struktur Data" + "\t\t" + uts_2 + "\t" + uas_2 + "\t" + tugas_2 + "\t" + nilaiAkhir_2 + "\t\t" + parafMatkul2 + "\t\t" + statusKelulusanMatkul2);
+        
+        System.out.println("Java" + "\t\t\t" + uts_3 + "\t" + uas_3 + "\t" + tugas_3+ "\t");
         
         // menentukan kelulusan berdasarkan rata-rata nilai akhir
             double rataRata = (nilaiAkhir_1 + nilaiAkhir_2) / 2;
